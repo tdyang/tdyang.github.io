@@ -6,150 +6,80 @@
   <title>Tracy Yang — Robotics Engineer</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <nav>
-    <span class="nav-name">Tracy Yang</span>
+    <a href="index.html" class="nav-name">Tracy Yang</a>
     <ul>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="coursework.html">Coursework</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-tag">BS '25 / MS '27 · Robotics Engineering · WPI</div>
-    <h1>Building systems<br>that <em>decide</em>,<br>adapt, and move.</h1>
+    <h1>Building systems<br>that <em style="color: var(--accent); font-style: italic;">decide</em>,<br>adapt, and move.</h1>
     <p class="hero-sub">
-      I bridge robotics research and deployable automation — adaptive control,
-      swarm coordination, legged systems, and real-time embedded software.
+      Bridging robotics research with deployable automation. 
+      Passionate about developing complex robotics systems into 
+      reliable, adaptive, elegant, modular solutions.
     </p>
     <div class="hero-pronouns">she/they</div>
-    <a href="#projects" class="btn">View projects ↓</a>
+    <a href="projects.html" class="btn">View projects ↓</a>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-label">Selected projects</div>
-
-    <article class="project-card featured">
-      <div class="project-meta">
-        <span class="tag">Multi-robot · Swarm · Embedded</span>
-        <span class="year">2025</span>
-      </div>
-      <h2>SMAC 6.0 — Symbiotic Multi-Agent Construction</h2>
-      <p>
-        Two 5-DOF inchworm robots autonomously pick and place smart blocks to
-        build structures in tandem using stigmergy — information embedded in the
-        blocks themselves drives decentralized decision-making without a central
-        controller. My contributions spanned trajectory planning, modular
-        moveset design, and system integration.
-      </p>
-      <ul class="project-highlights">
-        <li>Decentralized two-builder coordination via stigmergy</li>
-        <li>Dynamic trajectory planning and modular inchworm moveset design</li>
-        <li>Smart blocks with 6-port microcontroller mesh for structure-state communication</li>
-        <li>Advisors: Carlo Pinciroli (RBE/CS), Gregory Lewin (RBE/ME), Xinming Huang (ECE)</li>
-      </ul>
-      <div class="project-links">
-        <a href="https://www.wpi.edu/sites/default/files/2025-09/SMAC-6.0-Poster-2025.pdf" target="_blank" class="link-pill">Poster PDF ↗</a>
-        <a href="https://digital.wpi.edu/pdfviewer/fb494d71x" target="_blank" class="link-pill">Full Report ↗</a>
-      </div>
-    </article>
-
-    <div class="project-grid">
-
-      <article class="project-card">
-        <div class="project-meta">
-          <span class="tag">Navigation · SLAM</span>
-          <span class="year">Unified 4</span>
-        </div>
-        <h2>Autonomous Navigation & SLAM</h2>
-        <p>
-          Unified Robotics IV capstone. Implemented simultaneous localization
-          and mapping on a mobile robot platform, integrating dead reckoning,
-          sensor fusion, and wireless communication for real-time environment
-          reconstruction and autonomous navigation.
-        </p>
-        <div class="project-links">
-          <a href="#" class="link-pill">GitHub ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-meta">
-          <span class="tag">Manipulation · ROS</span>
-          <span class="year">Unified 3</span>
-        </div>
-        <h2>Robotic Arm — Kinematics & Control</h2>
-        <p>
-          Unified Robotics III arm project. Forward/inverse kinematics,
-          trajectory planning, and coordinated multi-joint control with computer
-          vision integration for task-space manipulation.
-        </p>
-        <div class="project-links">
-          <a href="#" class="link-pill">GitHub ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-meta">
-          <span class="tag">Autonomous · Sensing</span>
-          <span class="year">Unified 2</span>
-        </div>
-        <h2>Maze-Solving Mobile Robot</h2>
-        <p>
-          Unified Robotics II maze project. Sensor-driven autonomous navigation
-          through an unknown environment using IR and sonar sensing, PID
-          control, and state machine architecture.
-        </p>
-        <div class="project-links">
-          <a href="#" class="link-pill">GitHub ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-meta">
-          <span class="tag">Embedded · Mechatronics</span>
-          <span class="year">Unified 1</span>
-        </div>
-        <h2>Solar Panel Tracking System</h2>
-        <p>
-          Unified Robotics I electromechanical project. Designed and built a
-          solar-tracking mechanism with motor drive circuits, kinematics
-          analysis, and embedded C control running on a microcontroller.
-        </p>
-        <div class="project-links">
-          <a href="#" class="link-pill">GitHub ↗</a>
-        </div>
-      </article>
-
-    </div>
+  <!-- CORE INTERESTS -->
+  <section id="interests">
+    <div class="section-label">Core Interests</div>
+    <ul class="interests-list">
+      <li>Adaptive control & planning</li>
+      <li>Swarm coordination, decision-making algorithms</li>
+      <li>Arm/legged systems</li>
+      <li>System integration</li>
+      <li>Embedded systems, real-time systems, FPGAs</li>
+    </ul>
   </section>
 
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-label">Skills</div>
     <div class="skills-grid">
-      <div class="skill-group">
-        <h3>Languages</h3>
-        <p>Python, C/C++, Java, MATLAB, Verilog, C#, TypeScript, JavaScript, Node.js, SQL</p>
+      <div class="skill-group fade-in">
+        <h3>Operating Systems</h3>
+        <p>Windows, Linux (Ubuntu)</p>
       </div>
-      <div class="skill-group">
-        <h3>Frameworks & Tools</h3>
-        <p>ROS, AWS, Git/GitHub, SolidWorks, OnShape, Vivado (Xilinx), OpenMV, Code Composer Studio</p>
+      <div class="skill-group fade-in">
+        <h3>Applications</h3>
+        <p>SolidWorks, OnShape, GitHub, Git, Vim</p>
       </div>
-      <div class="skill-group">
-        <h3>Systems</h3>
-        <p>Embedded systems, real-time systems, FPGAs, multi-threading, state machines, system integration</p>
+      <div class="skill-group fade-in">
+        <h3>Frameworks / API</h3>
+        <p>Robotic Operating System (ROS), AWS, Ursina</p>
       </div>
-      <div class="skill-group">
-        <h3>Fabrication</h3>
-        <p>Mechanism assembly, hand-soldering, milling, laser-cutting, wire-crimping, mechanical design</p>
+      <div class="skill-group fade-in">
+        <h3>IDE</h3>
+        <p>Eclipse, IntelliJ, VSCode, Code Composer Studio, Vivado (Xilinx), OpenMV, Visual Studio</p>
+      </div>
+      <div class="skill-group fade-in">
+        <h3>Programming Languages</h3>
+        <p>Python, C/C++, Java, MATLAB, Verilog, C#</p>
+      </div>
+      <div class="skill-group fade-in">
+        <h3>Scripting Languages</h3>
+        <p>TypeScript, JavaScript, Node.js</p>
+      </div>
+      <div class="skill-group fade-in">
+        <h3>Database</h3>
+        <p>PostgreSQL, SQL Server</p>
+      </div>
+      <div class="skill-group fade-in">
+        <h3>Other</h3>
+        <p>Mechanism assembly, hand-soldering, milling, laser-cutting, wire-crimping, mechanical design, embedded systems, multi-threading, workflow, state machines, system integration</p>
       </div>
     </div>
   </section>
@@ -161,9 +91,10 @@
       <p>Open to full-time roles bridging robotics research and deployable automation.<br>
       Let's talk about adaptive control, swarm systems, or anything that moves.</p>
       <div class="contact-links">
-        <a href="mailto:your@email.com" class="btn">Email ↗</a>
-        <a href="https://github.com/yourusername" target="_blank" class="btn btn-ghost">GitHub ↗</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+        <a href="resume/TYang_Resume_Robotics_Mar_2026.pdf" download class="btn">Download resume ↓</a>
+        <a href="mailto:tdyang08@gmail.com" class="btn">Email ↗</a>
+        <a href="https://github.com/tdyang" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+        <a href="https://linkedin.com/in/tracy-yang-robotics" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
       </div>
     </div>
   </section>

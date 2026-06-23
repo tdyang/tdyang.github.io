@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Tracy Yang</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-name">Tracy Yang</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coursework.html">Coursework</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="section-label">Selected work</div>
+    <h1>Projects</h1>
+    <p class="hero-sub">Robotics builds spanning swarm coordination, manipulation, navigation, and embedded systems.</p>
+  </section>
+
+  <section id="projects">
+    <article class="project-card featured fade-in" id="smac">
+      <div class="project-meta">
+        <span class="tag">Multi-robot · Swarm · Embedded</span>
+        <span class="year">2025</span>
+      </div>
+      <h2>SMAC 6.0 — Symbiotic Multi-Agent Construction</h2>
+      <div class="title-rule"></div>
+      <p>
+        Two 5-DOF inchworm robots autonomously pick and place smart blocks to
+        build structures in tandem using stigmergy — information embedded in the
+        blocks themselves drives decentralized decision-making without a central
+        controller. My contributions spanned trajectory planning, modular
+        moveset design, and system integration.
+      </p>
+      <ul class="project-highlights">
+        <li>Decentralized two-builder coordination via stigmergy</li>
+        <li>Dynamic trajectory planning and modular inchworm moveset design</li>
+        <li>Smart blocks with 6-port microcontroller mesh for structure-state communication</li>
+        <li>Architected novel real-time ROS communication protocols, reducing system failures by 25%</li>
+        <li>Developed 3D simulation supporting 10+ cooperative agents with adaptive path planning</li>
+        <li>Advisors: Carlo Pinciroli (RBE/CS), Gregory Lewin (RBE/ME), Xinming Huang (ECE)</li>
+      </ul>
+      <div class="tag-row"><span class="tag">Python · ROS · Ursina · SolidWorks</span></div>
+      <div class="project-links">
+        <a href="https://github.com/SMAC6-0/SMAC6.0" target="_blank" class="link-pill">GitHub ↗</a>
+        <a href="https://www.wpi.edu/sites/default/files/2025-09/SMAC-6.0-Poster-2025.pdf" target="_blank" class="link-pill">Poster PDF ↗</a>
+        <a href="https://digital.wpi.edu/pdfviewer/fb494d71x" target="_blank" class="link-pill">Full Report ↗</a>
+        <a href="coursework.html#mqp" class="link-pill">Course: MQP ↗</a>
+      </div>
+    </article>
+
+    <div class="project-grid">
+
+      <article class="project-card fade-in" id="unified-4">
+        <div class="project-meta">
+          <span class="tag">Navigation · SLAM</span>
+          <span class="year">Unified 4</span>
+        </div>
+        <h2>Autonomous Navigation & SLAM</h2>
+        <div class="title-rule"></div>
+        <ul class="project-highlights">
+          <li>Implemented SLAM algorithms (A*, AMCL, frontier-based exploration) to solve the kidnapped robot problem on TurtleBot3</li>
+          <li>Completed full environment exploration in 8 minutes — 20% faster than class average</li>
+          <li>Optimized PID control for localization and dynamic obstacle handling</li>
+        </ul>
+        <div class="tag-row"><span class="tag">ROS · Python · TurtleBot3 · LiDAR</span></div>
+        <div class="project-links">
+          <a href="coursework.html#unified-4" class="link-pill">Course: RBE 3002 ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card fade-in" id="unified-3">
+        <div class="project-meta">
+          <span class="tag">Manipulation · ROS</span>
+          <span class="year">Unified 3</span>
+        </div>
+        <h2>Robotic Arm — Kinematics & Control</h2>
+        <div class="title-rule"></div>
+        <ul class="project-highlights">
+          <li>Derived Denavit-Hartenberg parameters and Jacobian matrix for a 4-DOF arm, implementing a numerical inverse kinematics solver</li>
+          <li>Developed computer vision pipeline achieving 98% pick-and-place success rate with live object tracking across 4 color categories</li>
+        </ul>
+        <div class="tag-row"><span class="tag">MATLAB · OpenMV</span></div>
+        <div class="project-links">
+          <a href="coursework.html#unified-3" class="link-pill">Course: RBE 3001 ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card fade-in" id="unified-2">
+        <div class="project-meta">
+          <span class="tag">Autonomous · Sensing</span>
+          <span class="year">Unified 2</span>
+        </div>
+        <h2>Maze-Solving Mobile Robot</h2>
+        <div class="title-rule"></div>
+        <ul class="project-highlights">
+          <li>Designed state machine firmware coordinating 5 sensors for autonomous maze navigation</li>
+          <li>Implemented wireless MQTT communication stack for real-time robot-to-robot data exchange</li>
+          <li>Integrated April Tag vision system with embedded processor for localization</li>
+        </ul>
+        <div class="tag-row"><span class="tag">C/C++ · MQTT · IR Sensors · April Tags</span></div>
+        <div class="project-links">
+          <a href="coursework.html#unified-2" class="link-pill">Course: RBE 2002 ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card fade-in" id="unified-1">
+        <div class="project-meta">
+          <span class="tag">Embedded · Mechatronics</span>
+          <span class="year">Unified 1</span>
+        </div>
+        <h2>Solar Panel Tracking System</h2>
+        <div class="title-rule"></div>
+        <ul class="project-highlights">
+          <li>Designed and wired power distribution system with four-bar mechanism</li>
+          <li>Performed SolidWorks FEA stress analysis to validate mechanical-electrical integration</li>
+        </ul>
+        <div class="tag-row"><span class="tag">SolidWorks · C · Power Systems</span></div>
+        <div class="project-links">
+          <a href="coursework.html#unified-1" class="link-pill">Course: RBE 2001 ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card fade-in" id="hospital-kiosk">
+        <div class="project-meta">
+          <span class="tag">Full-Stack · Algorithms</span>
+          <span class="year">Mar – May 2024</span>
+        </div>
+        <h2>Hospital Kiosk Navigation App</h2>
+        <div class="title-rule"></div>
+        <p>WPI & Brigham and Women's Hospital</p>
+        <ul class="project-highlights">
+          <li>Developed pathfinding algorithms (A*, BFS, DFS, Dijkstra) for hospital navigation in an 11-person Agile team</li>
+          <li>Built RESTful API endpoints for service requesting, scheduling, and dynamic map editing with PostgreSQL backend</li>
+          <li>Applied full SDLC with week-long Agile sprints, continuous integration via GitHub, and AWS deployment</li>
+        </ul>
+        <div class="tag-row"><span class="tag">NodeJS · TypeScript · PostgreSQL · AWS</span></div>
+        <div class="project-links">
+          <a href="coursework.html#software-engineering" class="link-pill">Course: Software Engineering ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <span>Tracy Yang · Robotics Engineering · WPI BS '25 / MS '27</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

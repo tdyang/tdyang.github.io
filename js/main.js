@@ -1,15 +1,11 @@
-// Smooth active nav highlighting on scroll
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('nav a[href*="#"]');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('href').includes(entry.target.id));
-      });
+// Scroll fade-in
+const fadeEls = document.querySelectorAll('.fade-in');
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 60);
+      fadeObserver.unobserve(e.target);
     }
   });
-}, { threshold: 0.4 });
-
-sections.forEach(s => observer.observe(s));
+}, { threshold: 0.12 });
+fadeEls.forEach(el => fadeObserver.observe(el));
