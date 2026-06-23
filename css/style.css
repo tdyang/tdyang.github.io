@@ -2,7 +2,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  color-scheme: light;
+  color-scheme: light only;
   --bg: #faf9fc;
   --surface: #ffffff;
   --border: #e0daea;
@@ -40,7 +40,7 @@ h1, h2 {
 
 nav {
   position: sticky; top: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: flex-end;
   padding: 1rem 2rem;
   border-bottom: 1px solid var(--border);
   background: rgba(250, 249, 252, 0.92);
