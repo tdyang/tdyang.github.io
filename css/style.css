@@ -299,7 +299,7 @@ footer {
 }
 .home-secondary-card {
   background: var(--bg); padding: 30px 28px;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease; min-width: 0;
 }
 .home-secondary-card:hover { background: var(--surface); }
 .home-secondary-media {
@@ -310,6 +310,7 @@ footer {
   transition: border-color 0.15s ease; overflow: hidden;
 }
 .home-secondary-media iframe { width: 100%; height: 100%; border: 0; display: block; }
+.home-secondary-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .home-secondary-card:hover .home-secondary-media { border-color: var(--border-hi); }
 .home-secondary-link { text-decoration: none; color: inherit; display: block; }
 .home-card-kicker { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
@@ -437,7 +438,7 @@ footer {
 .proj-course-link:hover { color: var(--plum); }
 
 .proj-grid-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.proj-grid-card { background: var(--bg); padding: 34px 36px; transition: background 0.15s ease; }
+.proj-grid-card { background: var(--bg); padding: 34px 36px; transition: background 0.15s ease; min-width: 0; }
 .proj-grid-card:hover { background: var(--surface); }
 .proj-card-media {
   aspect-ratio: 16/9; margin-bottom: 20px; border: 1px solid var(--border); border-radius: 2px; overflow: hidden;
@@ -447,6 +448,7 @@ footer {
   transition: border-color 0.15s ease;
 }
 .proj-card-media video, .proj-card-media iframe, .proj-card-media img { width: 100%; height: 100%; object-fit: cover; border: 0; display: block; }
+.proj-card-media img.media-contain, .home-secondary-media img.media-contain { object-fit: contain; }
 .proj-grid-card:hover .proj-card-media { border-color: var(--border-hi); }
 .proj-card-meta { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 .proj-grid-card h3 { font-family: var(--serif); font-weight: 700; font-size: 22px; margin: 0 0 10px; letter-spacing: -0.005em; }
