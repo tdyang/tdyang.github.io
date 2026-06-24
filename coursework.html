@@ -22,7 +22,7 @@
 
   <section class="page-hero">
     <div class="section-label">Education</div>
-    <h1>Coursework & learning outcomes</h1>
+    <h1>Coursework</h1>
     <p class="hero-sub">WPI Robotics Engineering · BS '25 / MS '27</p>
   </section>
 
@@ -32,7 +32,32 @@
     <div class="course-tier">
       <div class="tier-label">Graduate · MS Robotics Engineering (in progress, '27)</div>
 
-      <div class="course-card fade-in">
+      <div class="course-card fade-in" id="rbe500">
+        <div class="course-header">
+          <span class="course-code">RBE 500</span>
+          <h2>Foundations of Robotics</h2>
+        </div>
+        <div class="title-rule"></div>
+        <p class="course-desc">
+          Core graduate survey of robotics engineering. Topics span spatial
+          kinematics, control systems, probabilistic robotics, and robot ethics.
+          Establishes the mathematical and systems foundations for all subsequent
+          graduate coursework.
+        </p>
+        <div class="outcomes-label">Learning outcomes</div>
+        <ul class="outcomes">
+          <li>Represent and transform spatial poses using homogeneous coordinates and Lie groups</li>
+          <li>Apply probabilistic methods to state estimation and localization</li>
+          <li>Analyze robotic systems from sensing through actuation</li>
+          <li>Reason about ethical and social dimensions of robotic deployment</li>
+        </ul>
+        <div class="project-links" style="margin-top:1rem">
+          <a href="projects.html#rbe500" class="link-pill">View project ↗</a>
+          <a href="https://github.com/tdyang/rbe500" target="_blank" class="link-pill">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="course-card fade-in" id="rbe521">
         <div class="course-header">
           <span class="course-code">RBE 521</span>
           <h2>Legged Robotics</h2>
@@ -53,6 +78,35 @@
           <li>Design and evaluate gait patterns and stability criteria for multi-legged robots</li>
           <li>Simulate and validate legged robot behavior through a full design project</li>
         </ul>
+        <div class="project-links" style="margin-top:1rem">
+          <a href="projects.html#rbe521" class="link-pill">View project ↗</a>
+          <a href="https://github.com/tdyang/rbe521-legged-project" target="_blank" class="link-pill">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="course-card fade-in" id="rbe502">
+        <div class="course-header">
+          <span class="course-code">RBE 502</span>
+          <h2>Robot Controls</h2>
+        </div>
+        <div class="title-rule"></div>
+        <p class="course-desc">
+          Control theory with focus on robotic manipulators and mobile robots.
+          Covers feedback control, adaptive control, and the interplay between
+          control design and robot dynamics. Applications include joint-space and
+          task-space control, trajectory tracking, and stability analysis.
+        </p>
+        <div class="outcomes-label">Learning outcomes</div>
+        <ul class="outcomes">
+          <li>Design and analyze feedback controllers for robotic arms and mobile robots</li>
+          <li>Apply adaptive and robust control strategies to uncertain systems</li>
+          <li>Implement trajectory tracking with PID and model-based controllers</li>
+          <li>Assess stability using Lyapunov methods and frequency-domain tools</li>
+        </ul>
+        <div class="project-links" style="margin-top:1rem">
+          <a href="projects.html#rbe502" class="link-pill">View project ↗</a>
+          <a href="https://github.com/tdyang/rbe-502-crazyflie-project-tracy" target="_blank" class="link-pill">GitHub ↗</a>
+        </div>
       </div>
 
       <div class="course-card fade-in">
@@ -79,27 +133,6 @@
 
       <div class="course-card fade-in">
         <div class="course-header">
-          <span class="course-code">RBE 502</span>
-          <h2>Robot Controls</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Control theory with focus on robotic manipulators and mobile robots.
-          Covers feedback control, adaptive control, and the interplay between
-          control design and robot dynamics. Applications include joint-space and
-          task-space control, trajectory tracking, and stability analysis.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Design and analyze feedback controllers for robotic arms and mobile robots</li>
-          <li>Apply adaptive and robust control strategies to uncertain systems</li>
-          <li>Implement trajectory tracking with PID and model-based controllers</li>
-          <li>Assess stability using Lyapunov methods and frequency-domain tools</li>
-        </ul>
-      </div>
-
-      <div class="course-card fade-in">
-        <div class="course-header">
           <span class="course-code">RBE 501</span>
           <h2>Robot Dynamics</h2>
         </div>
@@ -116,27 +149,6 @@
           <li>Apply Lagrangian and Newton-Euler methods to arm and legged robot dynamics</li>
           <li>Implement dynamic simulation and validate against physical behavior</li>
           <li>Use dynamic models to inform control and motion planning design</li>
-        </ul>
-      </div>
-
-      <div class="course-card fade-in">
-        <div class="course-header">
-          <span class="course-code">RBE 500</span>
-          <h2>Foundations of Robotics</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Core graduate survey of robotics engineering. Topics span spatial
-          kinematics, control systems, probabilistic robotics, and robot ethics.
-          Establishes the mathematical and systems foundations for all subsequent
-          graduate coursework.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Represent and transform spatial poses using homogeneous coordinates and Lie groups</li>
-          <li>Apply probabilistic methods to state estimation and localization</li>
-          <li>Analyze robotic systems from sensing through actuation</li>
-          <li>Reason about ethical and social dimensions of robotic deployment</li>
         </ul>
       </div>
 
@@ -165,10 +177,24 @@
           <li>Integrated smart block microcontroller mesh for peer-to-peer structure-state communication</li>
           <li>Executed full hardware/software system integration from simulation to physical deployment</li>
         </ul>
+        <div class="media-embed">
+          <img src="media/smac/SMAC_6.0_Image.png" alt="SMAC 6.0 build photo">
+        </div>
+        <div class="media-embed">
+          <video controls preload="metadata">
+            <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.webm" type="video/webm">
+            <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.mp4" type="video/mp4">
+          </video>
+          <div class="media-caption">Build demo</div>
+        </div>
+        <div class="media-embed">
+          <iframe src="media/smac/SMAC%206.0%20Poster%202025.pdf"></iframe>
+          <div class="media-caption">Poster (PDF)</div>
+        </div>
         <div class="project-links" style="margin-top:1rem">
           <a href="projects.html#smac" class="link-pill">View project ↗</a>
-          <a href="https://www.wpi.edu/sites/default/files/2025-09/SMAC-6.0-Poster-2025.pdf" target="_blank" class="link-pill">Poster ↗</a>
           <a href="https://digital.wpi.edu/pdfviewer/fb494d71x" target="_blank" class="link-pill">Full Report ↗</a>
+          <a href="media/smac/SMAC%20Final%20MQP%20Video.mp4" target="_blank" class="link-pill">Final Video ↗</a>
         </div>
       </div>
 
@@ -238,6 +264,8 @@
         </ul>
         <div class="project-links" style="margin-top:1rem">
           <a href="projects.html#unified-4" class="link-pill">View project ↗</a>
+          <a href="media/rbe3002/RBE%203002%20Lab%203%20Team%2017%20Report.pdf" target="_blank" class="link-pill">Lab 3 Report ↗</a>
+          <a href="media/rbe3002/RBE%203002%20Team%2017%20Lab%204%20Report.pdf" target="_blank" class="link-pill">Lab 4 Report ↗</a>
         </div>
       </div>
 
@@ -262,6 +290,10 @@
         </ul>
         <div class="project-links" style="margin-top:1rem">
           <a href="projects.html#unified-3" class="link-pill">View project ↗</a>
+          <a href="media/rbe3001/Lab1_Report_RBE3001A23_Team5_Kushwaha_Slamet_Yang.pdf" target="_blank" class="link-pill">Lab 1 Report ↗</a>
+          <a href="media/rbe3001/Lab2_Report_RBE3001A23_Team5_Kushwaha_Slamet_Yang%20-%20Copy.pdf" target="_blank" class="link-pill">Lab 2 Report ↗</a>
+          <a href="media/rbe3001/Lab3_Report_RBE3001A23_Team5_Kushwaha_Slamet_Yang.pdf" target="_blank" class="link-pill">Lab 3 Report ↗</a>
+          <a href="media/rbe3001/Lab4_Report_RBE3001A23_Team5_Kushwaha_Slamet_Yang.pdf" target="_blank" class="link-pill">Lab 4 Report ↗</a>
         </div>
       </div>
 
@@ -286,6 +318,7 @@
         </ul>
         <div class="project-links" style="margin-top:1rem">
           <a href="projects.html#unified-2" class="link-pill">View project ↗</a>
+          <a href="media/rbe2002/RBE%202002%20Functional%20Hierarchy%20Tracy%20Yang.pdf" target="_blank" class="link-pill">Functional Hierarchy ↗</a>
         </div>
       </div>
 
@@ -308,8 +341,23 @@
           <li>Implement embedded C programs with PID control on a microcontroller</li>
           <li>Integrate mechanical design, electronics, and software into a functional robotic system</li>
         </ul>
+        <div class="media-embed">
+          <video controls preload="metadata">
+            <source src="media/rbe2001/together.webm" type="video/webm">
+            <source src="media/rbe2001/together.mp4" type="video/mp4">
+          </video>
+          <div class="media-caption">Forward demo</div>
+        </div>
+        <div class="media-embed">
+          <video controls preload="metadata">
+            <source src="media/rbe2001/together-reverse.webm" type="video/webm">
+            <source src="media/rbe2001/together-reverse.mp4" type="video/mp4">
+          </video>
+          <div class="media-caption">Reverse demo</div>
+        </div>
         <div class="project-links" style="margin-top:1rem">
           <a href="projects.html#unified-1" class="link-pill">View project ↗</a>
+          <a href="media/rbe2001/togetherBalloonBOM.PDF" target="_blank" class="link-pill">BOM ↗</a>
         </div>
       </div>
 
@@ -334,30 +382,46 @@
         </div>
 
         <div class="other-course fade-in">
-          <span class="course-code-sm">ECE</span>
+          <span class="course-code-sm">ECE 3849</span>
           <h3>Real-Time Embedded Systems</h3>
           <ul class="outcomes-sm">
             <li>Real-time OS concepts: scheduling, interrupts, and timing constraints</li>
             <li>Design and verification of time-critical embedded software</li>
           </ul>
+          <div class="tag-row" style="margin-top:0.75rem">
+            <a href="media/ece3849/ECE%203849%20Lab%202%20Report.pdf" target="_blank" class="link-pill">Lab 2 Report ↗</a>
+            <a href="media/ece3849/ECE%203849%20Lab%204%20Report.pdf" target="_blank" class="link-pill">Lab 4 Report ↗</a>
+          </div>
         </div>
 
         <div class="other-course fade-in">
-          <span class="course-code-sm">ECE</span>
+          <span class="course-code-sm">ECE 2049</span>
           <h3>Embedded Computing in Engineering Design</h3>
           <ul class="outcomes-sm">
             <li>Microcontroller peripherals and their application in robotic systems</li>
             <li>Sensor interfacing, ADC, PWM, and communication protocols (SPI, I2C, UART)</li>
           </ul>
+          <div class="tag-row" style="margin-top:0.75rem">
+            <a href="media/ece2049/ECE%202049%20HW3%20Tracy%20Yang.pdf" target="_blank" class="link-pill">HW3 ↗</a>
+            <a href="media/ece2049/ECE%202049%20Lab%202.pdf" target="_blank" class="link-pill">Lab 2 ↗</a>
+            <a href="media/ece2049/ECE%202049%20Lab%203.pdf" target="_blank" class="link-pill">Lab 3 ↗</a>
+          </div>
         </div>
 
         <div class="other-course fade-in">
-          <span class="course-code-sm">ECE</span>
+          <span class="course-code-sm">ECE 3829</span>
           <h3>Introduction to Digital Circuit Design</h3>
           <ul class="outcomes-sm">
             <li>Boolean logic, combinational and sequential circuit design</li>
             <li>Hardware description in Verilog and FPGA implementation</li>
           </ul>
+          <div class="media-embed" style="margin-top:0.75rem">
+            <video controls preload="metadata">
+              <source src="media/ece3829/ECE%203829%20Lab%203%20Demo.webm" type="video/webm">
+              <source src="media/ece3829/ECE%203829%20Lab%203%20Demo.mp4" type="video/mp4">
+            </video>
+            <div class="media-caption">Lab 3 demo</div>
+          </div>
         </div>
 
         <div class="other-course fade-in">

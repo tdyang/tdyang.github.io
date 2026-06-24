@@ -4,6 +4,7 @@
 # OS
 .DS_Store
 Thumbs.db
+*:Zone.Identifier
 
 # Editor
 .vscode/
@@ -12,3 +13,6 @@ Thumbs.db
 
 # Misc
 *.log
+
+# Too large for GitHub (>100MB) — upload to YouTube unlisted and embed instead
+media/smac/SMAC Final MQP Video.mp4
