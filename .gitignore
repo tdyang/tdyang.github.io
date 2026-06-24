@@ -11,6 +11,9 @@ Thumbs.db
 *.swp
 *~
 
+# PlatformIO build cache / downloaded library deps (regenerable, not source)
+.pio/
+
 # Misc
 *.log
 
