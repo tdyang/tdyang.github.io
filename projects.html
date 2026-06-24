@@ -20,220 +20,212 @@
     </ul>
   </nav>
 
-  <section class="page-hero">
-    <div class="section-label">Selected work</div>
-    <h1>Projects</h1>
-    <p class="hero-sub">Robotics builds spanning swarm coordination, manipulation, navigation, and embedded systems.</p>
-  </section>
+  <main class="proj-page">
 
-  <section id="projects">
-    <article class="project-card featured fade-in" id="smac">
-      <div class="project-meta">
-        <span class="tag">Multi-robot · Swarm · Embedded</span>
-        <span class="year">2024–2025</span>
+    <!-- PAGE HEADER -->
+    <header class="proj-header">
+      <div class="eyebrow">Selected work</div>
+      <h1>Projects</h1>
+      <p class="proj-lede">Robotics builds spanning swarm coordination, manipulation, navigation, control, and embedded systems.</p>
+    </header>
+
+    <!-- FILTER BAR -->
+    <div class="proj-filters" role="group" aria-label="Filter projects by category">
+      <button type="button" class="proj-chip active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="proj-chip" data-filter="swarm" aria-pressed="false">Swarm</button>
+      <button type="button" class="proj-chip" data-filter="navigation" aria-pressed="false">Navigation</button>
+      <button type="button" class="proj-chip" data-filter="manipulation" aria-pressed="false">Manipulation</button>
+      <button type="button" class="proj-chip" data-filter="control" aria-pressed="false">Control</button>
+      <button type="button" class="proj-chip" data-filter="embedded" aria-pressed="false">Embedded</button>
+      <button type="button" class="proj-chip" data-filter="full-stack" aria-pressed="false">Full-Stack</button>
+    </div>
+
+    <!-- FLAGSHIP HEADER -->
+    <div class="proj-section-head" data-head="flagship">
+      <div class="proj-head-row">
+        <h2>Flagship</h2>
+        <span class="proj-head-kicker">01 / MQP · 2024–25</span>
       </div>
-      <h2>SMAC 6.0 — Symbiotic Multi-Agent Construction</h2>
-      <div class="title-rule"></div>
-      <p>
-        Two 5-DOF inchworm robots autonomously pick and place smart blocks to
-        build structures in tandem using stigmergy — information embedded in the
-        blocks themselves drives decentralized decision-making without a central
-        controller. My contributions spanned trajectory planning, modular
-        moveset design, and system integration.
-      </p>
-      <ul class="project-highlights">
-        <li>Decentralized two-builder coordination via stigmergy</li>
-        <li>Dynamic trajectory planning and modular inchworm moveset design</li>
-        <li>Smart blocks with 6-port microcontroller mesh for structure-state communication</li>
-        <li>Architected novel real-time ROS communication protocols, reducing system failures by 25%</li>
-        <li>Developed 3D simulation supporting 10+ cooperative agents with adaptive path planning</li>
-        <li>Advisors: Carlo Pinciroli (RBE/CS), Gregory Lewin (RBE/ME), Xinming Huang (ECE)</li>
-      </ul>
-      <div class="tag-row"><span class="tag">Python · ROS · Ursina · SolidWorks</span></div>
-      <div class="media-embed">
-        <img src="media/smac/SMAC_6.0_Image.png" alt="SMAC 6.0 build photo">
+    </div>
+
+    <!-- FLAGSHIP: SMAC 6.0 -->
+    <article class="proj-flagship" id="smac" data-card data-group="flagship" data-cat="swarm embedded">
+      <div>
+        <div class="proj-flagship-media-main">
+          <span class="proj-demo-badge">▶ Demo loop</span>
+          <video autoplay muted loop playsinline preload="metadata" poster="media/smac/SMAC_6.0_Image.png">
+            <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.webm" type="video/webm">
+            <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="proj-flagship-support">
+          <div class="proj-support-thumb">
+            <img src="media/smac/SMAC_6.0_Image.png" alt="SMAC 6.0 build photo">
+          </div>
+          <a class="proj-support-thumb proj-support-thumb--poster" href="media/smac/SMAC%206.0%20Poster%202025.pdf" target="_blank">
+            <span>Poster</span><span>(PDF) ↗</span>
+          </a>
+        </div>
       </div>
-      <div class="media-embed">
-        <video controls preload="metadata">
-          <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.webm" type="video/webm">
-          <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.mp4" type="video/mp4">
-        </video>
-        <div class="media-caption">Build demo</div>
-      </div>
-      <div class="media-embed">
-        <iframe src="media/smac/SMAC%206.0%20Poster%202025.pdf"></iframe>
-        <div class="media-caption">Poster (PDF)</div>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/SMAC6-0/SMAC6.0" target="_blank" class="link-pill">GitHub ↗</a>
-        <a href="https://digital.wpi.edu/pdfviewer/fb494d71x" target="_blank" class="link-pill">Full Report ↗</a>
-        <a href="media/smac/SMAC%20Final%20MQP%20Video.mp4" target="_blank" class="link-pill">Final Video ↗</a>
-        <a href="coursework.html#mqp" class="link-pill">Course: MQP ↗</a>
+      <div class="proj-flagship-text">
+        <div class="proj-kicker">Multi-robot · Swarm · Embedded</div>
+        <h2>SMAC 6.0 — Symbiotic Multi-Agent Construction</h2>
+        <p>Two 5-DOF inchworm robots autonomously pick and place smart blocks to build structures in tandem using stigmergy — information embedded in the blocks themselves drives decentralized decision-making with no central controller.</p>
+        <ul class="proj-bullets">
+          <li>Architected real-time ROS communication protocols, reducing system failures by 25%</li>
+          <li>Built a 3D simulation supporting 10+ cooperative agents with adaptive path planning</li>
+          <li>Designed dynamic trajectory planning and a modular inchworm moveset</li>
+        </ul>
+        <div class="proj-stats">
+          <div><div class="proj-stat-num">25%</div><div class="proj-stat-label">fewer failures</div></div>
+          <div><div class="proj-stat-num">10+</div><div class="proj-stat-label">agents</div></div>
+          <div><div class="proj-stat-num">5</div><div class="proj-stat-label">DOF / arm</div></div>
+        </div>
+        <div class="proj-tags">
+          <span>Python</span><span>ROS</span><span>Ursina</span><span>SolidWorks</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/SMAC6-0/SMAC6.0" target="_blank">GitHub ↗</a>
+          <a href="https://digital.wpi.edu/pdfviewer/fb494d71x" target="_blank">Full Report ↗</a>
+          <a href="media/smac/SMAC%20Final%20MQP%20Video.mp4" target="_blank">Final Video ↗</a>
+          <a href="coursework.html#mqp" class="muted-link">Course: MQP ↗</a>
+        </div>
       </div>
     </article>
 
-    <div class="project-grid">
+    <!-- GRADUATE PROJECTS HEADER -->
+    <div class="proj-section-head" data-head="grad">
+      <div class="proj-head-row proj-head-row--top">
+        <h2>Graduate projects</h2>
+        <span class="proj-head-kicker">MS · 2025–26</span>
+      </div>
+    </div>
 
-      <article class="project-card fade-in" id="rbe500">
-        <div class="project-meta">
-          <span class="tag">Foundations</span>
-          <span class="year">2026</span>
+    <!-- CRAZYFLIE (GRADUATE) -->
+    <div class="proj-grad-card-wrap" id="rbe502" data-card data-group="grad" data-cat="control">
+      <div class="proj-crazyflie">
+        <div class="proj-crazyflie-media">
+          <span class="proj-demo-badge">▶ Flight test</span>
+          <span class="proj-media-placeholder">[ crazyflie trajectory tracking ]</span>
         </div>
-        <h2>Foundations of Robotics Coursework</h2>
-        <div class="title-rule"></div>
-        <ul class="project-highlights">
-          <li>Implemented spatial pose representations and transformations using homogeneous coordinates and Lie group theory</li>
-          <li>Applied probabilistic state estimation methods to robot localization problems</li>
-          <li>Analyzed end-to-end robotic system architectures from sensing through actuation</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://github.com/tdyang/rbe500" target="_blank" class="link-pill">GitHub ↗</a>
-          <a href="coursework.html#rbe500" class="link-pill">Course: RBE 500 ↗</a>
+        <div class="proj-crazyflie-text">
+          <div class="proj-kicker">Drone · Control · RBE 502 — 2025</div>
+          <h3>Crazyflie Quadrotor Control</h3>
+          <p>Designed feedback and trajectory-tracking controllers for a nano-quadrotor, applying adaptive strategies to manage flight uncertainty and validating closed-loop stability with <strong>Lyapunov analysis</strong>.</p>
+          <div class="proj-tags">
+            <span>Adaptive Control</span><span>Crazyflie</span><span>Python</span><span>Lyapunov</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/tdyang/rbe-502-crazyflie-project-tracy" target="_blank">GitHub ↗</a>
+            <a href="coursework.html#rbe502" class="muted-link">Course: RBE 502 ↗</a>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- GRADUATE COURSEWORK LIST -->
+    <div class="proj-courselist" data-courselist data-group="grad">
+      <div class="proj-course-row" id="rbe500">
+        <a class="proj-course-code" href="coursework.html#rbe500">RBE 500</a>
+        <div>
+          <div class="proj-course-title">Foundations of Robotics</div>
+          <div class="proj-course-desc">Spatial pose representations, Lie-group transforms, and probabilistic state estimation for localization.</div>
+        </div>
+        <a class="proj-course-link" href="https://github.com/tdyang/rbe500" target="_blank">GitHub ↗</a>
+      </div>
+      <div class="proj-course-row" id="rbe521">
+        <a class="proj-course-code" href="coursework.html#rbe521">RBE 521</a>
+        <div>
+          <div class="proj-course-title">Legged Robot Design &amp; Simulation</div>
+          <div class="proj-course-desc">Modeled 3D kinematics/dynamics of a multi-legged mechanism; validated gaits against stability criteria.</div>
+        </div>
+        <a class="proj-course-link" href="https://github.com/tdyang/rbe521-legged-project" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- UNDERGRADUATE PROJECTS HEADER -->
+    <div class="proj-section-head" data-head="undergrad">
+      <div class="proj-head-row proj-head-row--top">
+        <h2>Undergraduate projects</h2>
+        <span class="proj-head-kicker">BS · 2023–24</span>
+      </div>
+    </div>
+
+    <!-- UNDERGRADUATE 2-COLUMN GRID -->
+    <div class="proj-grid-2col" data-groupbox="undergrad">
+
+      <article class="proj-grid-card" id="unified-4" data-card data-group="undergrad" data-cat="navigation">
+        <div class="proj-card-media">[ slam exploration clip ]</div>
+        <div class="proj-card-meta"><span>Navigation · SLAM</span><span>2023</span></div>
+        <h3>Autonomous Navigation &amp; SLAM</h3>
+        <p>Implemented A*, AMCL, and frontier-based exploration to solve the kidnapped-robot problem on TurtleBot3. Full exploration in <strong>8 min — 20% faster</strong> than class average.</p>
+        <div class="proj-card-tags"><span>ROS</span><span>Python</span><span>TurtleBot3</span><span>LiDAR</span></div>
+        <div class="proj-card-links"><a href="coursework.html#unified-4" class="muted-link">RBE 3002 ↗</a></div>
       </article>
 
-      <article class="project-card fade-in" id="rbe521">
-        <div class="project-meta">
-          <span class="tag">Legged Robot · Simulation</span>
-          <span class="year">2026</span>
+      <article class="proj-grid-card" id="unified-3" data-card data-group="undergrad" data-cat="manipulation">
+        <div class="proj-card-media">
+          <iframe src="https://www.youtube.com/embed/ERb21PqIVOI" title="Robotic arm pick-and-place demo" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <h2>Legged Robot Design & Simulation</h2>
-        <div class="title-rule"></div>
-        <ul class="project-highlights">
-          <li>Designed and simulated a custom legged robot, modeling 3D kinematics and dynamics of multi-legged mechanisms</li>
-          <li>Evaluated workspace, singularity, and manipulability constraints for the mechanism design</li>
-          <li>Developed and validated gait patterns against stability criteria through simulation</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://github.com/tdyang/rbe521-legged-project" target="_blank" class="link-pill">GitHub ↗</a>
-          <a href="coursework.html#rbe521" class="link-pill">Course: RBE 521 ↗</a>
-        </div>
+        <div class="proj-card-meta"><span>Manipulation · CV</span><span>2023</span></div>
+        <h3>Robotic Arm — Kinematics &amp; Control</h3>
+        <p>Derived DH parameters and the Jacobian for a 4-DOF arm with a numerical IK solver, plus a vision pipeline hitting <strong>98% pick-and-place success</strong> across 4 color categories.</p>
+        <div class="proj-card-tags"><span>MATLAB</span><span>OpenMV</span><span>Computer Vision</span></div>
+        <div class="proj-card-links"><a href="coursework.html#unified-3" class="muted-link">RBE 3001 ↗</a></div>
       </article>
 
-      <article class="project-card fade-in" id="rbe502">
-        <div class="project-meta">
-          <span class="tag">Drone · Control</span>
-          <span class="year">2025</span>
-        </div>
-        <h2>Crazyflie Quadrotor Control</h2>
-        <div class="title-rule"></div>
-        <ul class="project-highlights">
-          <li>Designed feedback and trajectory-tracking controllers for a Crazyflie nano-quadrotor</li>
-          <li>Applied adaptive control strategies to manage system uncertainty in flight dynamics</li>
-          <li>Validated controller stability using Lyapunov-based analysis</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://github.com/tdyang/rbe-502-crazyflie-project-tracy" target="_blank" class="link-pill">GitHub ↗</a>
-          <a href="coursework.html#rbe502" class="link-pill">Course: RBE 502 ↗</a>
-        </div>
+      <article class="proj-grid-card" id="unified-2" data-card data-group="undergrad" data-cat="embedded">
+        <div class="proj-card-media">[ maze run clip ]</div>
+        <div class="proj-card-meta"><span>Autonomous · Sensing</span><span>2023</span></div>
+        <h3>Maze-Solving Mobile Robot</h3>
+        <p>State-machine firmware coordinating <strong>5 sensors</strong> for autonomous maze navigation, with a wireless MQTT stack and April Tag vision for localization.</p>
+        <div class="proj-card-tags"><span>C/C++</span><span>MQTT</span><span>April Tags</span></div>
+        <div class="proj-card-links"><a href="coursework.html#unified-2" class="muted-link">RBE 2002 ↗</a></div>
       </article>
 
-      <article class="project-card fade-in" id="hospital-kiosk">
-        <div class="project-meta">
-          <span class="tag">Full-Stack · Algorithms</span>
-          <span class="year">2024</span>
-        </div>
-        <h2>Hospital Kiosk Navigation App</h2>
-        <div class="title-rule"></div>
-        <p>WPI & Brigham and Women's Hospital</p>
-        <ul class="project-highlights">
-          <li>Developed pathfinding algorithms (A*, BFS, DFS, Dijkstra) for hospital navigation in an 11-person Agile team</li>
-          <li>Built RESTful API endpoints for service requesting, scheduling, and dynamic map editing with PostgreSQL backend</li>
-          <li>Applied full SDLC with week-long Agile sprints, continuous integration via GitHub, and AWS deployment</li>
-        </ul>
-        <div class="tag-row"><span class="tag">NodeJS · TypeScript · PostgreSQL · AWS</span></div>
-        <div class="project-links">
-          <a href="coursework.html#software-engineering" class="link-pill">Course: Software Engineering ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card fade-in" id="unified-4">
-        <div class="project-meta">
-          <span class="tag">Navigation · SLAM</span>
-          <span class="year">2023</span>
-        </div>
-        <h2>Autonomous Navigation & SLAM</h2>
-        <div class="title-rule"></div>
-        <ul class="project-highlights">
-          <li>Implemented SLAM algorithms (A*, AMCL, frontier-based exploration) to solve the kidnapped robot problem on TurtleBot3</li>
-          <li>Completed full environment exploration in 8 minutes — 20% faster than class average</li>
-          <li>Optimized PID control for localization and dynamic obstacle handling</li>
-        </ul>
-        <div class="tag-row"><span class="tag">ROS · Python · TurtleBot3 · LiDAR</span></div>
-        <div class="project-links">
-          <a href="coursework.html#unified-4" class="link-pill">Course: RBE 3002 ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card fade-in" id="unified-3">
-        <div class="project-meta">
-          <span class="tag">Manipulation · ROS</span>
-          <span class="year">2023</span>
-        </div>
-        <h2>Robotic Arm — Kinematics & Control</h2>
-        <div class="title-rule"></div>
-        <ul class="project-highlights">
-          <li>Derived Denavit-Hartenberg parameters and Jacobian matrix for a 4-DOF arm, implementing a numerical inverse kinematics solver</li>
-          <li>Developed computer vision pipeline achieving 98% pick-and-place success rate with live object tracking across 4 color categories</li>
-        </ul>
-        <div class="tag-row"><span class="tag">MATLAB · OpenMV</span></div>
-        <div class="project-links">
-          <a href="coursework.html#unified-3" class="link-pill">Course: RBE 3001 ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card fade-in" id="unified-2">
-        <div class="project-meta">
-          <span class="tag">Autonomous · Sensing</span>
-          <span class="year">2023</span>
-        </div>
-        <h2>Maze-Solving Mobile Robot</h2>
-        <div class="title-rule"></div>
-        <ul class="project-highlights">
-          <li>Designed state machine firmware coordinating 5 sensors for autonomous maze navigation</li>
-          <li>Implemented wireless MQTT communication stack for real-time robot-to-robot data exchange</li>
-          <li>Integrated April Tag vision system with embedded processor for localization</li>
-        </ul>
-        <div class="tag-row"><span class="tag">C/C++ · MQTT · IR Sensors · April Tags</span></div>
-        <div class="project-links">
-          <a href="coursework.html#unified-2" class="link-pill">Course: RBE 2002 ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card fade-in" id="unified-1">
-        <div class="project-meta">
-          <span class="tag">Embedded · Mechatronics</span>
-          <span class="year">2023</span>
-        </div>
-        <h2>Solar Panel Tracking System</h2>
-        <div class="title-rule"></div>
-        <ul class="project-highlights">
-          <li>Designed and wired power distribution system with four-bar mechanism</li>
-          <li>Performed SolidWorks FEA stress analysis to validate mechanical-electrical integration</li>
-        </ul>
-        <div class="tag-row"><span class="tag">SolidWorks · C · Power Systems</span></div>
-        <div class="media-embed">
-          <video controls preload="metadata">
+      <article class="proj-grid-card" id="unified-1" data-card data-group="undergrad" data-cat="embedded">
+        <div class="proj-card-media">
+          <video autoplay muted loop playsinline preload="metadata">
             <source src="media/rbe2001/together.webm" type="video/webm">
             <source src="media/rbe2001/together.mp4" type="video/mp4">
           </video>
-          <div class="media-caption">Forward demo</div>
         </div>
-        <div class="media-embed">
-          <video controls preload="metadata">
-            <source src="media/rbe2001/together-reverse.webm" type="video/webm">
-            <source src="media/rbe2001/together-reverse.mp4" type="video/mp4">
-          </video>
-          <div class="media-caption">Reverse demo</div>
-        </div>
-        <div class="project-links">
-          <a href="media/rbe2001/togetherBalloonBOM.PDF" target="_blank" class="link-pill">BOM ↗</a>
-          <a href="coursework.html#unified-1" class="link-pill">Course: RBE 2001 ↗</a>
+        <div class="proj-card-meta"><span>Embedded · Mechatronics</span><span>2023</span></div>
+        <h3>Solar Panel Placing Robot</h3>
+        <p>Designed and manufactored a four-bar mechanism for a robot, validating mechanical-electrical integration with SolidWorks <strong>FEA stress analysis</strong>.</p>
+        <div class="proj-card-tags"><span>SolidWorks</span><span>C</span><span>Power Systems</span></div>
+        <div class="proj-card-links">
+          <a href="media/rbe2001/togetherBalloonBOM.PDF" target="_blank">BOM ↗</a>
+          <a href="coursework.html#unified-1" class="muted-link">RBE 2001 ↗</a>
         </div>
       </article>
 
+      <article class="proj-grid-card" id="hospital-kiosk" data-card data-group="undergrad" data-cat="full-stack">
+        <div class="proj-card-media">[ kiosk ui / map ]</div>
+        <div class="proj-card-meta"><span>Full-Stack · Algorithms</span><span>2024</span></div>
+        <h3>Hospital Kiosk Navigation App</h3>
+        <p>Pathfinding (A*, BFS, DFS, Dijkstra) and a RESTful service layer for hospital navigation, built with an <strong>11-person Agile team</strong> for Brigham &amp; Women's Hospital.</p>
+        <div class="proj-card-tags"><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>AWS</span></div>
+        <div class="proj-card-links"><a href="coursework.html#software-engineering" class="muted-link">Software Engineering ↗</a></div>
+      </article>
+
     </div>
-  </section>
+
+    <!-- EMPTY STATE -->
+    <div class="proj-empty" data-empty hidden>No projects in this category yet.</div>
+
+    <!-- CONTACT STRIP -->
+    <div class="contact-strip">
+      
+      <div class="contact-strip-text">Open to full-time roles bridging robotics research and deployable automation.</div>
+      <div class="contact-strip-links">
+        <a href="mailto:tdyang08@gmail.com">Email ↗</a>
+        <a href="https://github.com/tdyang" target="_blank">GitHub ↗</a>
+        <a href="https://linkedin.com/in/tracy-yang-robotics" target="_blank">LinkedIn ↗</a>
+      </div>
+    </div>
+
+  </main>
 
   <footer>
     <span>Tracy Yang · Robotics Engineering · WPI BS '25 / MS '27</span>

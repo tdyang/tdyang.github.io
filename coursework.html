@@ -20,400 +20,378 @@
     </ul>
   </nav>
 
-  <section class="page-hero">
-    <div class="section-label">Education</div>
-    <h1>Coursework</h1>
-    <p class="hero-sub">WPI Robotics Engineering · BS '25 / MS '27</p>
-  </section>
+  <main class="cw-page">
 
-  <section class="coursework">
+    <!-- PAGE HEADER -->
+    <header class="cw-header">
+      <div class="eyebrow">Education</div>
+      <h1>Coursework</h1>
+      <p class="cw-lede">WPI Robotics Engineering · BS '25 / MS '27 — graduate control &amp; planning, the full undergraduate Unified Robotics sequence, and supporting CS / ECE foundations.</p>
+    </header>
 
-    <!-- GRADUATE -->
-    <div class="course-tier">
-      <div class="tier-label">Graduate · MS Robotics Engineering (in progress, '27)</div>
-
-      <div class="course-card fade-in" id="rbe500">
-        <div class="course-header">
-          <span class="course-code">RBE 500</span>
-          <h2>Foundations of Robotics</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Core graduate survey of robotics engineering. Topics span spatial
-          kinematics, control systems, probabilistic robotics, and robot ethics.
-          Establishes the mathematical and systems foundations for all subsequent
-          graduate coursework.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Represent and transform spatial poses using homogeneous coordinates and Lie groups</li>
-          <li>Apply probabilistic methods to state estimation and localization</li>
-          <li>Analyze robotic systems from sensing through actuation</li>
-          <li>Reason about ethical and social dimensions of robotic deployment</li>
-        </ul>
-        <div class="project-links" style="margin-top:1rem">
-          <a href="projects.html#rbe500" class="link-pill">View project ↗</a>
-          <a href="https://github.com/tdyang/rbe500" target="_blank" class="link-pill">GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="course-card fade-in" id="rbe521">
-        <div class="course-header">
-          <span class="course-code">RBE 521</span>
-          <h2>Legged Robotics</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Foundations and principles of parallel manipulators and legged robots.
-          Advanced spatial and 3D kinematics and dynamics, workspace analysis,
-          inverse and forward kinematics, motion analysis and control, and gait
-          and stability/balance analysis of legged robots — including quadrupeds,
-          hexapods, and other multi-legged systems. Final project: design, analysis,
-          and simulation of a custom legged or parallel robot.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Analyze 3D kinematics and dynamics of parallel and legged mechanisms</li>
-          <li>Perform workspace, singularity, and manipulability analysis</li>
-          <li>Design and evaluate gait patterns and stability criteria for multi-legged robots</li>
-          <li>Simulate and validate legged robot behavior through a full design project</li>
-        </ul>
-        <div class="project-links" style="margin-top:1rem">
-          <a href="projects.html#rbe521" class="link-pill">View project ↗</a>
-          <a href="https://github.com/tdyang/rbe521-legged-project" target="_blank" class="link-pill">GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="course-card fade-in" id="rbe502">
-        <div class="course-header">
-          <span class="course-code">RBE 502</span>
-          <h2>Robot Controls</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Control theory with focus on robotic manipulators and mobile robots.
-          Covers feedback control, adaptive control, and the interplay between
-          control design and robot dynamics. Applications include joint-space and
-          task-space control, trajectory tracking, and stability analysis.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Design and analyze feedback controllers for robotic arms and mobile robots</li>
-          <li>Apply adaptive and robust control strategies to uncertain systems</li>
-          <li>Implement trajectory tracking with PID and model-based controllers</li>
-          <li>Assess stability using Lyapunov methods and frequency-domain tools</li>
-        </ul>
-        <div class="project-links" style="margin-top:1rem">
-          <a href="projects.html#rbe502" class="link-pill">View project ↗</a>
-          <a href="https://github.com/tdyang/rbe-502-crazyflie-project-tracy" target="_blank" class="link-pill">GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="course-card fade-in">
-        <div class="course-header">
-          <span class="course-code">RBE 550</span>
-          <h2>Motion Planning</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Motion planning algorithms and their applications to manipulators,
-          mobile robots, and humanoid robots. Topics include search algorithms,
-          combinatorial and sampling-based planners (RRT, PRM), collision
-          detection and avoidance, and planning for non-holonomic and
-          kinodynamic systems.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Implement and compare search-based and sampling-based planning algorithms</li>
-          <li>Apply RRT*, PRM, and probabilistic methods to high-dimensional configuration spaces</li>
-          <li>Handle collision detection, avoidance constraints, and kinodynamic feasibility</li>
-          <li>Plan trajectories for manipulator arms and mobile robots in ROS/C++/Python</li>
-        </ul>
-      </div>
-
-      <div class="course-card fade-in">
-        <div class="course-header">
-          <span class="course-code">RBE 501</span>
-          <h2>Robot Dynamics</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Dynamics of robotic manipulators and mechanisms. Topics include
-          computational models of objects and motion, forward and inverse dynamics,
-          Lagrangian and Newton-Euler formulations, dynamic simulation, and
-          dynamical control. Applications to arms and mobile robots.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Derive equations of motion for multi-body robotic systems</li>
-          <li>Apply Lagrangian and Newton-Euler methods to arm and legged robot dynamics</li>
-          <li>Implement dynamic simulation and validate against physical behavior</li>
-          <li>Use dynamic models to inform control and motion planning design</li>
-        </ul>
-      </div>
-
+    <!-- JUMP NAV -->
+    <div class="cw-jumpnav">
+      <a class="cw-jump-link" href="#grad">Graduate</a>
+      <a class="cw-jump-link" href="#undergrad">Undergraduate</a>
+      <a class="cw-jump-link" href="#supporting">Supporting</a>
     </div>
 
-    <!-- UNDERGRADUATE -->
-    <div class="course-tier">
-      <div class="tier-label">Undergraduate · BS Robotics Engineering, '25</div>
-
-      <div class="course-card featured-course fade-in" id="mqp">
-        <div class="course-header">
-          <span class="course-code">MQP</span>
-          <h2>Major Qualifying Project — SMAC 6.0</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          WPI's capstone project equivalent. Symbiotic Multi-Agent Construction 6.0:
-          a decentralized multi-robot construction system in which two 5-DOF inchworm
-          robots collaboratively build structures using stigmergy — embedding build-state
-          information in smart blocks rather than a central planner.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Designed and implemented decentralized multi-robot coordination via stigmergy</li>
-          <li>Built dynamic trajectory planning and modular moveset algorithms for two builders</li>
-          <li>Integrated smart block microcontroller mesh for peer-to-peer structure-state communication</li>
-          <li>Executed full hardware/software system integration from simulation to physical deployment</li>
-        </ul>
-        <div class="media-embed">
-          <img src="media/smac/SMAC_6.0_Image.png" alt="SMAC 6.0 build photo">
-        </div>
-        <div class="media-embed">
-          <video controls preload="metadata">
-            <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.webm" type="video/webm">
-            <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.mp4" type="video/mp4">
-          </video>
-          <div class="media-caption">Build demo</div>
-        </div>
-        <div class="media-embed">
-          <iframe src="media/smac/SMAC%206.0%20Poster%202025.pdf"></iframe>
-          <div class="media-caption">Poster (PDF)</div>
-        </div>
-        <div class="project-links" style="margin-top:1rem">
-          <a href="projects.html#smac" class="link-pill">View project ↗</a>
-          <a href="https://digital.wpi.edu/pdfviewer/fb494d71x" target="_blank" class="link-pill">Full Report ↗</a>
-          <a href="media/smac/SMAC%20Final%20MQP%20Video.mp4" target="_blank" class="link-pill">Final Video ↗</a>
-        </div>
+    <!-- ============ GRADUATE ============ -->
+    <div class="cw-section-head" id="grad">
+      <div class="cw-head-row">
+        <h2>Graduate</h2>
+        <span class="cw-head-kicker">MS Robotics · in progress '27</span>
       </div>
-
-      <div class="course-card fade-in">
-        <div class="course-header">
-          <span class="course-code">RBE 4815</span>
-          <h2>Industrial Robotics</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Industrial serial arm robots (spherical wrist) and parallel manipulators
-          (Stewart-Gough, Delta). Degrees of freedom, inverse and forward kinematics
-          (position and velocity), workspace, singularity, manipulability analysis,
-          end effectors, motion accuracy, and robot control for automation. Hands-on
-          industrial robot lab.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Analyze and program industrial serial and parallel robotic manipulators</li>
-          <li>Solve forward and inverse kinematic problems for complex wrist configurations</li>
-          <li>Evaluate workspace limits, singularities, and manipulability of industrial arms</li>
-          <li>Deploy and validate robot programs on physical industrial hardware</li>
-        </ul>
-      </div>
-
-      <div class="course-card fade-in">
-        <div class="course-header">
-          <span class="course-code">RBE 4701</span>
-          <h2>Artificial Intelligence for Robotics</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          AI techniques applied to robotics perception, planning, and actuation.
-          Topics include informed and uninformed search, adversarial search,
-          reasoning under uncertainty, reinforcement learning, and deep learning.
-          Labs culminate in a final project on perception and navigation in a
-          dynamic environment.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Implement informed search (A*), uninformed search (BFS/DFS), and adversarial search</li>
-          <li>Apply probabilistic reasoning and Bayesian methods to sensor fusion and localization</li>
-          <li>Design and train reinforcement learning agents for robotic decision-making</li>
-          <li>Integrate deep learning models into a perception-to-navigation pipeline</li>
-        </ul>
-      </div>
-
-      <div class="course-card fade-in" id="unified-4">
-        <div class="course-header">
-          <span class="course-code">RBE 3002</span>
-          <h2>Unified Robotics IV — Navigation & SLAM</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Fourth course in the Unified Robotics sequence. Focus on mobile robot
-          navigation: dead reckoning, landmark updates, inertial sensors, radio
-          localization, simultaneous localization and mapping (SLAM), wireless
-          communication, and operation in challenging environments. Open-ended
-          lab project across the full term.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Implement SLAM on a mobile robot platform integrating multiple sensor modalities</li>
-          <li>Apply dead reckoning, landmark-based updates, and sensor fusion for localization</li>
-          <li>Design and deploy wireless communication protocols for robot coordination</li>
-          <li>Complete an open-ended autonomous navigation challenge from specification to demo</li>
-        </ul>
-        <div class="project-links" style="margin-top:1rem">
-          <a href="projects.html#unified-4" class="link-pill">View project ↗</a>
-        </div>
-      </div>
-
-      <div class="course-card fade-in" id="unified-3">
-        <div class="course-header">
-          <span class="course-code">RBE 3001</span>
-          <h2>Unified Robotics III — Arm Robot & Manipulation</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Third course in the sequence. Analysis and control of robotic arms and
-          manipulation. Coordinate transformations, position and velocity
-          kinematics, trajectory planning, robot forces and dynamics, computer
-          vision integration, and multi-joint control for complex manipulation tasks.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Derive and apply forward and inverse kinematics for multi-DOF arm systems</li>
-          <li>Plan and execute smooth joint-space and Cartesian trajectories</li>
-          <li>Integrate computer vision for perception-guided manipulation</li>
-          <li>Analyze and control robot forces and dynamics for physical interaction</li>
-        </ul>
-        <div class="project-links" style="margin-top:1rem">
-          <a href="projects.html#unified-3" class="link-pill">View project ↗</a>
-        </div>
-      </div>
-
-      <div class="course-card fade-in" id="unified-2">
-        <div class="course-header">
-          <span class="course-code">RBE 2002</span>
-          <h2>Unified Robotics II — Maze Navigation</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          Second course in the sequence. Sensor-based autonomous mobile robot
-          control including IR and sonar sensing, PID velocity and position
-          control, state machine design, encoder-based odometry, and object
-          transport tasks.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Design and tune PID controllers for velocity and position on mobile robots</li>
-          <li>Build sensor fusion pipelines combining IR, sonar, and encoder data</li>
-          <li>Architect and debug finite state machines for autonomous behavior</li>
-          <li>Complete multi-stage transport tasks with closed-loop feedback control</li>
-        </ul>
-        <div class="project-links" style="margin-top:1rem">
-          <a href="projects.html#unified-2" class="link-pill">View project ↗</a>
-        </div>
-      </div>
-
-      <div class="course-card fade-in" id="unified-1">
-        <div class="course-header">
-          <span class="course-code">RBE 2001</span>
-          <h2>Unified Robotics I — Solar Panel Tracking</h2>
-        </div>
-        <div class="title-rule"></div>
-        <p class="course-desc">
-          First course in the Unified Robotics sequence. Mechanical concepts in
-          robot design, construction, and actuation. Electrical-to-mechanical power
-          conversion, kinematic principles for planar manipulator design, motor
-          drive circuits, H-bridges, embedded C programming, and PID control.
-        </p>
-        <div class="outcomes-label">Learning outcomes</div>
-        <ul class="outcomes">
-          <li>Design planar mechanisms applying kinematic analysis and power transmission principles</li>
-          <li>Build and characterize DC motor drive circuits including H-bridges</li>
-          <li>Implement embedded C programs with PID control on a microcontroller</li>
-          <li>Integrate mechanical design, electronics, and software into a functional robotic system</li>
-        </ul>
-        <div class="media-embed">
-          <video controls preload="metadata">
-            <source src="media/rbe2001/together.webm" type="video/webm">
-            <source src="media/rbe2001/together.mp4" type="video/mp4">
-          </video>
-          <div class="media-caption">Forward demo</div>
-        </div>
-        <div class="media-embed">
-          <video controls preload="metadata">
-            <source src="media/rbe2001/together-reverse.webm" type="video/webm">
-            <source src="media/rbe2001/together-reverse.mp4" type="video/mp4">
-          </video>
-          <div class="media-caption">Reverse demo</div>
-        </div>
-        <div class="project-links" style="margin-top:1rem">
-          <a href="projects.html#unified-1" class="link-pill">View project ↗</a>
-          <a href="media/rbe2001/togetherBalloonBOM.PDF" target="_blank" class="link-pill">BOM ↗</a>
-        </div>
-      </div>
-
     </div>
+    <div class="cw-rows">
 
-    <!-- OTHER COURSES -->
-    <div class="course-tier">
-      <div class="tier-label">Supporting coursework</div>
-
-      <div class="other-courses-grid">
-
-        <div class="other-course fade-in" id="software-engineering">
-          <span class="course-code-sm">CS / SE</span>
-          <h3>Software Engineering</h3>
-          <ul class="outcomes-sm">
-            <li>Software design patterns, modularity, and system architecture</li>
-            <li>Version control, testing strategies, and collaborative development workflows</li>
-          </ul>
-          <div class="tag-row" style="margin-top:0.75rem">
-            <a href="projects.html#hospital-kiosk" class="link-pill">View project ↗</a>
+      <div class="cw-course" id="rbe500" data-course>
+        <div class="cw-code">RBE&nbsp;500</div>
+        <div>
+          <h3>Foundations of Robotics</h3>
+          <p class="cw-course-desc">Core graduate survey of robotics engineering — spatial kinematics, control systems, probabilistic robotics, and robot ethics. Establishes the mathematical and systems foundations for all later graduate work.</p>
+          <div class="cw-toggle-row">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-rbe500">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+            <div class="cw-course-links">
+              <a href="projects.html#rbe500">View project ↗</a>
+              <a href="https://github.com/tdyang/rbe500" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="cw-acc-panel" id="acc-rbe500" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Represent and transform spatial poses using homogeneous coordinates and Lie groups</li>
+              <li>Apply probabilistic methods to state estimation and localization</li>
+              <li>Analyze robotic systems from sensing through actuation</li>
+              <li>Reason about ethical and social dimensions of robotic deployment</li>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div class="other-course fade-in">
-          <span class="course-code-sm">ECE 3849</span>
-          <h3>Real-Time Embedded Systems</h3>
-          <ul class="outcomes-sm">
+      <div class="cw-course" id="rbe521" data-course>
+        <div class="cw-code">RBE&nbsp;521</div>
+        <div>
+          <h3>Legged Robotics</h3>
+          <p class="cw-course-desc">Principles of parallel manipulators and legged robots — advanced 3D kinematics and dynamics, workspace analysis, and gait &amp; stability analysis of quadrupeds, hexapods, and other multi-legged systems. Final project: design, analysis, and simulation of a custom legged or parallel robot.</p>
+          <div class="cw-toggle-row">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-rbe521">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+            <div class="cw-course-links">
+              <a href="projects.html#rbe521">View project ↗</a>
+              <a href="https://github.com/tdyang/rbe521-legged-project" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="cw-acc-panel" id="acc-rbe521" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Analyze 3D kinematics and dynamics of parallel and legged mechanisms</li>
+              <li>Perform workspace, singularity, and manipulability analysis</li>
+              <li>Design and evaluate gait patterns and stability criteria for multi-legged robots</li>
+              <li>Simulate and validate legged robot behavior through a full design project</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" id="rbe502" data-course>
+        <div class="cw-code">RBE&nbsp;502</div>
+        <div>
+          <h3>Robot Controls</h3>
+          <p class="cw-course-desc">Control theory for robotic manipulators and mobile robots — feedback and adaptive control, joint- and task-space control, trajectory tracking, and the interplay between control design and robot dynamics.</p>
+          <div class="cw-toggle-row">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-rbe502">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+            <div class="cw-course-links">
+              <a href="projects.html#rbe502">View project ↗</a>
+              <a href="https://github.com/tdyang/rbe-502-crazyflie-project-tracy" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="cw-acc-panel" id="acc-rbe502" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Design and analyze feedback controllers for robotic arms and mobile robots</li>
+              <li>Apply adaptive and robust control strategies to uncertain systems</li>
+              <li>Implement trajectory tracking with PID and model-based controllers</li>
+              <li>Assess stability using Lyapunov methods and frequency-domain tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" data-course>
+        <div class="cw-code">RBE&nbsp;550</div>
+        <div>
+          <h3>Motion Planning</h3>
+          <p class="cw-course-desc">Motion-planning algorithms for manipulators, mobile, and humanoid robots — search, combinatorial and sampling-based planners (RRT, PRM), collision detection and avoidance, and planning for non-holonomic and kinodynamic systems.</p>
+          <div class="cw-toggle-row cw-toggle-row--solo">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-rbe550">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+          </div>
+          <div class="cw-acc-panel" id="acc-rbe550" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Implement and compare search-based and sampling-based planning algorithms</li>
+              <li>Apply RRT*, PRM, and probabilistic methods to high-dimensional configuration spaces</li>
+              <li>Handle collision detection, avoidance constraints, and kinodynamic feasibility</li>
+              <li>Plan trajectories for manipulator arms and mobile robots in ROS / C++ / Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" style="border-bottom:none;" data-course>
+        <div class="cw-code">RBE&nbsp;501</div>
+        <div>
+          <h3>Robot Dynamics</h3>
+          <p class="cw-course-desc">Dynamics of robotic manipulators and mechanisms — forward and inverse dynamics, Lagrangian and Newton-Euler formulations, dynamic simulation, and dynamical control of arms and mobile robots.</p>
+          <div class="cw-toggle-row cw-toggle-row--solo">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-rbe501">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+          </div>
+          <div class="cw-acc-panel" id="acc-rbe501" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Derive equations of motion for multi-body robotic systems</li>
+              <li>Apply Lagrangian and Newton-Euler methods to arm and legged robot dynamics</li>
+              <li>Implement dynamic simulation and validate against physical behavior</li>
+              <li>Use dynamic models to inform control and motion-planning design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ UNDERGRADUATE ============ -->
+    <div class="cw-section-head" id="undergrad">
+      <div class="cw-head-row cw-head-row--top">
+        <h2>Undergraduate</h2>
+        <span class="cw-head-kicker">BS Robotics · '25</span>
+      </div>
+    </div>
+    <div class="cw-rows">
+
+      <div class="cw-course cw-course--mqp" id="mqp" data-course>
+        <div>
+          <div class="cw-code">MQP</div>
+          <div class="cw-mqp-sub">Capstone · 2025</div>
+        </div>
+        <div>
+          <h3>Major Qualifying Project — SMAC 6.0</h3>
+          <p class="cw-course-desc">WPI's senior capstone. Symbiotic Multi-Agent Construction 6.0 — a decentralized multi-robot system in which two 5-DOF inchworm robots collaboratively build structures using stigmergy, embedding build-state information in smart blocks rather than a central planner.</p>
+          <div class="cw-toggle-row">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-mqp">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+            <div class="cw-course-links">
+              <a href="projects.html#smac">View project ↗</a>
+              <a href="https://digital.wpi.edu/pdfviewer/fb494d71x" target="_blank">Full Report ↗</a>
+              <a href="media/smac/SMAC%20Final%20MQP%20Video.mp4" target="_blank">Final Video ↗</a>
+            </div>
+          </div>
+          <div class="cw-acc-panel" id="acc-mqp" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Designed and implemented decentralized multi-robot coordination via stigmergy</li>
+              <li>Built dynamic trajectory planning and modular moveset algorithms for two builders</li>
+              <li>Integrated a smart-block microcontroller mesh for peer-to-peer structure-state communication</li>
+              <li>Executed full hardware/software system integration from simulation to physical deployment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" data-course>
+        <div class="cw-code">RBE&nbsp;4815</div>
+        <div>
+          <h3>Industrial Robotics</h3>
+          <p class="cw-course-desc">Industrial serial arms (spherical wrist) and parallel manipulators (Stewart-Gough, Delta) — kinematics, workspace, singularity and manipulability analysis, end effectors, and robot control for automation. Hands-on industrial robot lab.</p>
+          <div class="cw-toggle-row cw-toggle-row--solo">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-rbe4815">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+          </div>
+          <div class="cw-acc-panel" id="acc-rbe4815" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Analyze and program industrial serial and parallel robotic manipulators</li>
+              <li>Solve forward and inverse kinematic problems for complex wrist configurations</li>
+              <li>Evaluate workspace limits, singularities, and manipulability of industrial arms</li>
+              <li>Deploy and validate robot programs on physical industrial hardware</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" data-course>
+        <div class="cw-code">RBE&nbsp;4701</div>
+        <div>
+          <h3>Artificial Intelligence for Robotics</h3>
+          <p class="cw-course-desc">AI techniques for perception, planning, and actuation — informed/uninformed and adversarial search, reasoning under uncertainty, reinforcement learning, and deep learning, culminating in a perception-and-navigation project in a dynamic environment.</p>
+          <div class="cw-toggle-row cw-toggle-row--solo">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-rbe4701">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+          </div>
+          <div class="cw-acc-panel" id="acc-rbe4701" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Implement informed search (A*), uninformed search (BFS/DFS), and adversarial search</li>
+              <li>Apply probabilistic reasoning and Bayesian methods to sensor fusion and localization</li>
+              <li>Design and train reinforcement-learning agents for robotic decision-making</li>
+              <li>Integrate deep-learning models into a perception-to-navigation pipeline</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" id="unified-4" data-course>
+        <div class="cw-code">RBE&nbsp;3002</div>
+        <div>
+          <h3>Unified Robotics IV — Navigation &amp; SLAM</h3>
+          <p class="cw-course-desc">Mobile-robot navigation — dead reckoning, landmark updates, inertial and radio localization, SLAM, and wireless communication in challenging environments, with an open-ended term-long lab project.</p>
+          <div class="cw-toggle-row">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-unified-4">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+            <div class="cw-course-links">
+              <a href="projects.html#unified-4">View project ↗</a>
+            </div>
+          </div>
+          <div class="cw-acc-panel" id="acc-unified-4" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Implement SLAM on a mobile robot integrating multiple sensor modalities</li>
+              <li>Apply dead reckoning, landmark-based updates, and sensor fusion for localization</li>
+              <li>Design and deploy wireless communication protocols for robot coordination</li>
+              <li>Complete an open-ended autonomous navigation challenge from spec to demo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" id="unified-3" data-course>
+        <div class="cw-code">RBE&nbsp;3001</div>
+        <div>
+          <h3>Unified Robotics III — Arm Robot &amp; Manipulation</h3>
+          <p class="cw-course-desc">Analysis and control of robotic arms — coordinate transforms, position and velocity kinematics, trajectory planning, robot forces and dynamics, and computer-vision-guided manipulation for complex tasks.</p>
+          <div class="cw-toggle-row">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-unified-3">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+            <div class="cw-course-links">
+              <a href="projects.html#unified-3">View project ↗</a>
+            </div>
+          </div>
+          <div class="cw-acc-panel" id="acc-unified-3" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Derive and apply forward and inverse kinematics for multi-DOF arm systems</li>
+              <li>Plan and execute smooth joint-space and Cartesian trajectories</li>
+              <li>Integrate computer vision for perception-guided manipulation</li>
+              <li>Analyze and control robot forces and dynamics for physical interaction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" id="unified-2" data-course>
+        <div class="cw-code">RBE&nbsp;2002</div>
+        <div>
+          <h3>Unified Robotics II — Maze Navigation</h3>
+          <p class="cw-course-desc">Sensor-based autonomous mobile robots — IR and sonar sensing, PID velocity and position control, state-machine design, encoder-based odometry, and object-transport tasks.</p>
+          <div class="cw-toggle-row">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-unified-2">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+            <div class="cw-course-links">
+              <a href="projects.html#unified-2">View project ↗</a>
+            </div>
+          </div>
+          <div class="cw-acc-panel" id="acc-unified-2" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Design and tune PID controllers for velocity and position on mobile robots</li>
+              <li>Build sensor-fusion pipelines combining IR, sonar, and encoder data</li>
+              <li>Architect and debug finite state machines for autonomous behavior</li>
+              <li>Complete multi-stage transport tasks with closed-loop feedback control</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cw-course" id="unified-1" style="border-bottom:none;" data-course>
+        <div class="cw-code">RBE&nbsp;2001</div>
+        <div>
+          <h3>Unified Robotics I — Solar Panel Placing</h3>
+          <p class="cw-course-desc">Mechanical robot design, construction, and actuation — electrical-to-mechanical power conversion, planar manipulator kinematics, motor drive circuits and H-bridges, embedded C programming, and PID control.</p>
+          <div class="cw-toggle-row">
+            <button type="button" class="cw-acc-toggle" data-acc aria-expanded="false" aria-controls="acc-unified-1">Learning outcomes <span class="cw-caret" data-caret>▾</span></button>
+            <div class="cw-course-links">
+              <a href="projects.html#unified-1">View project ↗</a>
+              <a href="media/rbe2001/togetherBalloonBOM.PDF" target="_blank">BOM ↗</a>
+            </div>
+          </div>
+          <div class="cw-acc-panel" id="acc-unified-1" data-acc-panel>
+            <ul class="cw-outcomes">
+              <li>Design planar mechanisms applying kinematic analysis and power-transmission principles</li>
+              <li>Build and characterize DC motor drive circuits including H-bridges</li>
+              <li>Implement embedded C programs with PID control on a microcontroller</li>
+              <li>Integrate mechanical design, electronics, and software into a functional robot</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ SUPPORTING ============ -->
+    <div class="cw-section-head" id="supporting">
+      <div class="cw-head-row cw-head-row--top">
+        <h2>Supporting coursework</h2>
+        <span class="cw-head-kicker">CS · ECE · WR</span>
+      </div>
+    </div>
+    <div class="cw-supporting-wrap">
+      <div class="cw-supporting-grid">
+
+        <div class="cw-supporting-card" id="software-engineering">
+          <span class="cw-code">CS 3733</span>
+          <h4>Software Engineering</h4>
+          <ul class="cw-outcomes">
+            <li>Software design patterns, modularity, and system architecture</li>
+            <li>Version control, testing strategies, and collaborative workflows</li>
+          </ul>
+          <div class="cw-course-links"><a href="projects.html#hospital-kiosk">View project ↗</a></div>
+        </div>
+
+        <div class="cw-supporting-card">
+          <span class="cw-code">ECE 3849</span>
+          <h4>Real-Time Embedded Systems</h4>
+          <ul class="cw-outcomes">
             <li>Real-time OS concepts: scheduling, interrupts, and timing constraints</li>
             <li>Design and verification of time-critical embedded software</li>
           </ul>
         </div>
 
-        <div class="other-course fade-in">
-          <span class="course-code-sm">ECE 2049</span>
-          <h3>Embedded Computing in Engineering Design</h3>
-          <ul class="outcomes-sm">
+        <div class="cw-supporting-card">
+          <span class="cw-code">ECE 2049</span>
+          <h4>Embedded Computing in Engineering Design</h4>
+          <ul class="cw-outcomes">
             <li>Microcontroller peripherals and their application in robotic systems</li>
-            <li>Sensor interfacing, ADC, PWM, and communication protocols (SPI, I2C, UART)</li>
+            <li>Sensor interfacing, ADC, PWM, and protocols (SPI, I2C, UART)</li>
           </ul>
         </div>
 
-        <div class="other-course fade-in">
-          <span class="course-code-sm">ECE 3829</span>
-          <h3>Introduction to Digital Circuit Design</h3>
-          <ul class="outcomes-sm">
+        <div class="cw-supporting-card">
+          <span class="cw-code">ECE 3829</span>
+          <h4>Introduction to Digital Circuit Design</h4>
+          <ul class="cw-outcomes">
             <li>Boolean logic, combinational and sequential circuit design</li>
             <li>Hardware description in Verilog and FPGA implementation</li>
           </ul>
         </div>
 
-        <div class="other-course fade-in">
-          <span class="course-code-sm">WR</span>
-          <h3>Technical Writing</h3>
-          <ul class="outcomes-sm">
+        <div class="cw-supporting-card">
+          <span class="cw-code">WR 3210</span>
+          <h4>Technical Writing</h4>
+          <ul class="cw-outcomes">
             <li>Technical documentation, proposals, and engineering reports</li>
-            <li>Clear communication of complex systems to technical and non-technical audiences</li>
+            <li>Clear communication of complex systems to varied audiences</li>
           </ul>
         </div>
+
+        <div class="cw-supporting-card cw-supporting-filler">+ ongoing</div>
 
       </div>
     </div>
 
-  </section>
+    <!-- CONTACT STRIP -->
+    <div class="contact-strip" style="margin-top:48px;">
+      
+      <div class="contact-strip-text">Open to full-time roles bridging robotics research and deployable automation.</div>
+      <div class="contact-strip-links">
+        <a href="projects.html">Projects ↗</a>
+        <a href="https://github.com/tdyang" target="_blank">GitHub ↗</a>
+        <a href="resume.html">Resume ↗</a>
+      </div>
+    </div>
+
+  </main>
 
   <footer>
     <span>Tracy Yang · Robotics Engineering · WPI BS '25 / MS '27</span>

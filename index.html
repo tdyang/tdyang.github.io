@@ -20,84 +20,122 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-tag">BS '25 / MS '27 · Robotics Engineering · WPI</div>
-    <h1><em style="color: var(--accent); font-style: bold;">Tracy Duchia Yang</em></h1>
-    <p class="hero-sub">
-      Bridging robotics research with deployable automation. 
-      Passionate about developing complex robotics systems into 
-      reliable, adaptive, elegant, modular solutions.
-    </p>
-    <div class="hero-pronouns">she/they</div>
-    <a href="projects.html" class="btn">View projects ↓</a>
-  </section>
+  <main class="home">
 
-  <!-- CORE INTERESTS -->
-  <section id="interests">
-    <div class="section-label">Core Interests</div>
-    <ul class="interests-list">
-      <li>Adaptive control & planning</li>
-      <li>Swarm coordination, decision-making algorithms</li>
-      <li>Arm/legged systems</li>
-      <li>System integration</li>
-      <li>Embedded systems, real-time systems, FPGAs</li>
-    </ul>
-  </section>
+    <!-- HERO -->
+    <section class="home-hero">
+      <div class="home-hero-top">
+        <div class="home-hero-text">
+          <div class="eyebrow">BS '25 / MS '27 · Robotics Engineering · WPI</div>
+          <h1 class="home-h1">Tracy Duchia Yang</h1>
+          <p class="home-lede">Bridging robotics research with deployable automation — building complex systems into reliable, adaptive, modular solutions.</p>
+        </div>
+        <div class="home-hero-media">
+          <img src="media/portrait/graduation.jpeg" alt="Tracy Yang at WPI graduation">
+        </div>
+      </div>
+      <div class="home-cta-row">
+        <a href="projects.html" class="home-btn home-btn-primary">View projects ↓</a>
+        <a href="resume/TYang_Resume_Robotics_Mar_2026.pdf" download class="home-btn home-btn-secondary">Download resume ↓</a>
+      </div>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-label">Skills</div>
-    <div class="skills-grid">
-      <div class="skill-group fade-in">
-        <h3>Operating Systems</h3>
-        <p>Windows, Linux (Ubuntu)</p>
+    <!-- SELECTED WORK HEADER -->
+    <div class="home-section-header">
+      <h2>Selected work</h2>
+      <span class="home-section-kicker">01 / Flagship</span>
+    </div>
+
+    <!-- FLAGSHIP: SMAC 6.0 -->
+    <a class="home-flagship fade-in" href="projects.html#smac">
+      <div class="home-flagship-media">
+        <span class="home-demo-badge">▶ Demo loop</span>
+        <video autoplay muted loop playsinline preload="metadata" poster="media/smac/SMAC_6.0_Image.png">
+          <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.webm" type="video/webm">
+          <source src="media/smac/DIAG%20PYRAMID%20DONE%20WOOOOOOOOO.mp4" type="video/mp4">
+        </video>
       </div>
-      <div class="skill-group fade-in">
-        <h3>Applications</h3>
-        <p>SolidWorks, OnShape, GitHub, Git, Vim</p>
+      <div class="home-flagship-text">
+        <div class="home-flagship-kicker">Multi-robot · Swarm · Embedded — 2024–25</div>
+        <h3>SMAC 6.0 — Symbiotic Multi-Agent Construction</h3>
+        <p>Two 5-DOF inchworm robots build structures in tandem using stigmergy — information embedded in smart blocks drives decentralized decisions with no central controller.</p>
+        <div class="home-stats">
+          <div>
+            <div class="home-stat-num">25%</div>
+            <div class="home-stat-label">fewer failures</div>
+          </div>
+          <div>
+            <div class="home-stat-num">10+</div>
+            <div class="home-stat-label">cooperative agents</div>
+          </div>
+        </div>
+        <div class="home-tags">
+          <span>Python</span><span>ROS</span><span>Ursina</span><span>SolidWorks</span>
+        </div>
       </div>
-      <div class="skill-group fade-in">
-        <h3>Frameworks / API</h3>
-        <p>Robotic Operating System (ROS), AWS, Ursina</p>
+    </a>
+
+    <!-- SECONDARY PROJECTS -->
+    <div class="home-secondary-grid">
+      <div class="home-secondary-card fade-in">
+        <div class="home-secondary-media">[ navigation / SLAM demo ]</div>
+        <a class="home-secondary-link" href="projects.html#unified-4">
+          <div class="home-card-kicker">Navigation · SLAM</div>
+          <h4>Autonomous Navigation &amp; SLAM</h4>
+          <p>Full exploration in 8 min — 20% faster than class average. TurtleBot3 · LiDAR.</p>
+        </a>
       </div>
-      <div class="skill-group fade-in">
-        <h3>IDE</h3>
-        <p>Eclipse, IntelliJ, VSCode, Code Composer Studio, Vivado (Xilinx), OpenMV, Visual Studio</p>
+      <div class="home-secondary-card fade-in">
+        <div class="home-secondary-media">
+          <iframe src="https://www.youtube.com/embed/ERb21PqIVOI" title="Robotic arm pick-and-place demo" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <a class="home-secondary-link" href="projects.html#unified-3">
+          <div class="home-card-kicker">Manipulation · CV</div>
+          <h4>Robotic Arm — Kinematics</h4>
+          <p>98% pick-and-place success with live object tracking. MATLAB · OpenMV.</p>
+        </a>
       </div>
-      <div class="skill-group fade-in">
-        <h3>Programming Languages</h3>
-        <p>Python, C/C++, Java, MATLAB, Verilog, C#</p>
-      </div>
-      <div class="skill-group fade-in">
-        <h3>Scripting Languages</h3>
-        <p>TypeScript, JavaScript, Node.js</p>
-      </div>
-      <div class="skill-group fade-in">
-        <h3>Database</h3>
-        <p>PostgreSQL, SQL Server</p>
-      </div>
-      <div class="skill-group fade-in">
-        <h3>Other</h3>
-        <p>Mechanism assembly, hand-soldering, milling, laser-cutting, wire-crimping, mechanical design, embedded systems, multi-threading, workflow, state machines, system integration</p>
+      <div class="home-secondary-card fade-in">
+        <div class="home-secondary-media">[ crazyflie demo ]</div>
+        <a class="home-secondary-link" href="projects.html#rbe502">
+          <div class="home-card-kicker">Drone · Control</div>
+          <h4>Crazyflie Quadrotor Control</h4>
+          <p>Lyapunov-validated adaptive flight controllers. Nano-quadrotor.</p>
+        </a>
       </div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-label">Contact</div>
-    <div class="contact-block">
-      <p>Open to full-time roles bridging robotics research and deployable automation.<br>
-      Let's talk about adaptive control, swarm systems, or anything that moves.</p>
-      <div class="contact-links">
-        <a href="resume/TYang_Resume_Robotics_Mar_2026.pdf" download class="btn">Download resume ↓</a>
-        <a href="mailto:tdyang08@gmail.com" class="btn">Email ↗</a>
-        <a href="https://github.com/tdyang" target="_blank" class="btn btn-ghost">GitHub ↗</a>
-        <a href="https://linkedin.com/in/tracy-yang-robotics" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+    <!-- CONDENSED SKILLS -->
+    <div class="home-skills">
+      <div class="fade-in">
+        <div class="home-skill-label">Core</div>
+        <div class="home-skill-list">ROS · C/C++ · Python · Control theory · State estimation</div>
+      </div>
+      <div class="fade-in">
+        <div class="home-skill-label">Embedded</div>
+        <div class="home-skill-list">FPGAs · Verilog · Real-time systems · MQTT · April Tags</div>
+      </div>
+      <div class="fade-in">
+        <div class="home-skill-label">Design</div>
+        <div class="home-skill-list">SolidWorks · OnShape · FEA · Mechanism assembly</div>
+      </div>
+      <div class="fade-in">
+        <div class="home-skill-label">Stack</div>
+        <div class="home-skill-list">TypeScript · Node.js · PostgreSQL · AWS</div>
       </div>
     </div>
-  </section>
+
+    <!-- CONTACT STRIP -->
+    <div class="contact-strip">
+      <div class="contact-strip-text">Open to full-time roles bridging robotics research and deployable automation.</div>
+      <div class="contact-strip-links">
+        <a href="mailto:tdyang08@gmail.com">Email ↗</a>
+        <a href="https://github.com/tdyang" target="_blank">GitHub ↗</a>
+        <a href="https://linkedin.com/in/tracy-yang-robotics" target="_blank">LinkedIn ↗</a>
+      </div>
+    </div>
+
+  </main>
 
   <footer>
     <span>Tracy Yang · Robotics Engineering · WPI BS '25 / MS '27</span>
