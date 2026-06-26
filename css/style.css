@@ -269,6 +269,11 @@ footer {
 .home-section-header h2 { font-family: var(--serif); font-size: 24px; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
 .home-section-kicker { font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 
+.home-experience { padding: 32px 56px 44px; }
+.home-experience h3 { font-family: var(--serif); font-size: 24px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 6px; }
+.home-experience-company { font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; color: var(--muted); margin-bottom: 14px; }
+.home-experience p { font-size: 15px; line-height: 1.55; color: #46415c; margin: 0; max-width: 60ch; }
+
 .home-flagship {
   display: grid; grid-template-columns: 520px 1fr; gap: 40px; padding: 40px 56px 48px;
   text-decoration: none; color: inherit;
@@ -343,6 +348,7 @@ footer {
   .home-hero-media { width: 160px; height: 160px; max-width: none; }
   .home-h1 { font-size: 44px; }
   .home-section-header { padding: 0 24px 18px; }
+  .home-experience { padding: 24px 24px 32px; }
   .home-flagship { grid-template-columns: 1fr; padding: 32px 24px; }
   .home-secondary-grid { grid-template-columns: 1fr; }
   .home-secondary-card { padding: 24px; }
